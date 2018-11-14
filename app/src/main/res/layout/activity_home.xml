@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md_grey_800"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:background="@drawable/semi_bg"
+
+        android:layout_height="0dp"
+        >
+        
+        <TextView
+            android:id="@+id/textGrid"
+            android:text="LAW SAATHI"
+            android:textSize="34sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/md_white_1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+<GridLayout
+    android:id="@+id/mainGrid"
+    android:columnCount="2"
+    android:rowCount="2"
+    android:alignmentMode="alignMargins"
+    android:columnOrderPreserved="false"
+    android:layout_weight="8"
+    android:padding="14dp"
+    android:layout_marginTop="-60dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+
+    <!--adding cards-->
+
+    <!--Card 1-->
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:id="@+id/Cfirm"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_rowWeight="1"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+
+        >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal|center_vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/firm"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Law Firms"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/md_black_1000"
+        />
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--Card 2-->
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/Clawyer"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_rowWeight="1"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal|center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/lawyer"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lawyers"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/md_black_1000"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--Card 3-->
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/CNews"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_rowWeight="1"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal|center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/news"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Legal News"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/md_black_1000"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--Card 4-->
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/CAdvice"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_rowWeight="1"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal|center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/advice"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Legal Advice"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/md_black_1000"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</GridLayout>
+
+</LinearLayout>

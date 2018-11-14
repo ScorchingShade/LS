@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "747754359696",
+    "firebase_url": "https://law-saathi.firebaseio.com",
+    "project_id": "law-saathi",
+    "storage_bucket": "law-saathi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747754359696:android:9d9830b570ff03df",
+        "android_client_info": {
+          "package_name": "com.ankushinc.reddragon.lawsaathi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747754359696-2em21d06fisqi7q8bftd2olmb411dcr0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ankushinc.reddragon.lawsaathi",
+            "certificate_hash": "aea4d9c0d6b8f08a828b57c85ecb0a1316880def"
+          }
+        },
+        {
+          "client_id": "747754359696-pq1v59ht9ajdtdv9jnokv60ou9unq7up.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMNg0voWiNmiwKA7UkH-RuNxy9gzn9sLY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747754359696-pq1v59ht9ajdtdv9jnokv60ou9unq7up.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

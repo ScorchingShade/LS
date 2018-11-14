@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_800"
+    tools:context=".Register">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logoSignupR"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:elevation="3dp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/main_logo" />
+
+    <TextView
+        android:id="@+id/logoGymR"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logoSignupR"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Law Saathi"
+        android:textAlignment="center"
+        android:textColor="@color/md_white_1000"
+        android:textSize="25dp" />
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/signup_progressR"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoGymR"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/signup_formR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoGymR">
+
+        <LinearLayout
+            android:id="@+id/email_login_formR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/emailR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/md_white_1000"
+                    android:textColorHint="@color/md_white_1000" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/passwordR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/md_white_1000"
+                    android:textColorHint="@color/md_white_1000" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/email_sign_up_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_button_bg"
+                android:clickable="true"
+                android:onClick="signup"
+                android:padding="10dp"
+                android:text="Sign Up"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
