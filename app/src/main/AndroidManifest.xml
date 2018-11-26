@@ -25,7 +25,11 @@
         <activity android:name=".Firm" />
         <activity android:name=".Advice" />
         <activity android:name=".News" />
-        <activity android:name=".Lawyer"></activity>
+        <activity android:name=".Lawyer" />
+        <activity android:name=".Civil_Lawyer" />
+        <activity android:name=".Criminal_Lawyer" />
+        <activity android:name=".Civil_firm" />
+        <activity android:name=".Criminal_frim"></activity>
     </application>
 
 </manifest>
